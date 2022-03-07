@@ -1,6 +1,7 @@
 // deno run --allow-net oak/index.ts
 // deno bundle ./oak/index.ts server.bundle.js
 // deno compile --unstable --allow-read --allow-net index.ts -p 8080
+// deno run --no-remote --import-map=vendor/import_map.json ./oak/index.ts
 
 import { Application } from "https://deno.land/x/oak/mod.ts";
 
